@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .quote-container {
+            text-align: center;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quote-container">
+    <h1 class="mb-4">Random Quote Generator</h1>
+    <blockquote class="blockquote">
+        <p class="mb-0">{{ quote }}</p>
+        <footer class="blockquote-footer">{{ author }}</footer>
+    </blockquote>
+    <a href="/" class="btn btn-primary mt-4">New Quote</a>
+</div>
+
+</body>
+</html>
